@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEF2F5;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 16px;
+}
+
+.khung-lien-he {
+    width: 100%;
+    max-width: 640px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.dau-bieu-mau {
+    background-color: #00796B;
+    color: #FFFFFF;
+    padding: 24px 28px;
+}
+
+.dau-bieu-mau h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.dau-bieu-mau p {
+    font-size: 14px;
+    color: #E0F2F1;
+    line-height: 1.5;
+}
+
+.bieu-mau {
+    padding: 26px 28px;
+}
+
+.nhom-truong {
+    margin-bottom: 18px;
+}
+
+.hang-2-cot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.nhom-truong label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.bat-buoc {
+    color: #D32F2F;
+}
+
+.nhom-truong input,
+.nhom-truong select,
+.nhom-truong textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    color: #222222;
+    padding: 10px 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nhom-truong textarea {
+    resize: vertical;
+}
+
+.nhom-truong input:focus,
+.nhom-truong select:focus,
+.nhom-truong textarea:focus {
+    outline: none;
+    border-color: #00796B;
+    box-shadow: 0 0 0 3px rgba(0, 121, 107, 0.15);
+}
+
+.nhom-nut {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.nut {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 22px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.nut-gui {
+    background-color: #00796B;
+    color: #FFFFFF;
+}
+
+.nut-gui:hover {
+    background-color: #00695C;
+}
+
+.nut-nhap-lai {
+    background-color: #E2E8F0;
+    color: #334155;
+}
+
+.nut-nhap-lai:hover {
+    background-color: #CBD5E1;
+}
+
+@media (max-width: 560px) {
+    .dau-bieu-mau,
+    .bieu-mau {
+        padding: 20px;
+    }
+
+    .hang-2-cot {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .nhom-nut {
+        flex-direction: column;
+    }
+}

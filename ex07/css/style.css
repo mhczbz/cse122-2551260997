@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2F2F2;
+    color: #222222;
+    padding: 28px 16px;
+}
+
+.khung-km {
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.khung-km header {
+    background-color: #C8102E;
+    color: #FFFFFF;
+    padding: 14px;
+    text-align: center;
+}
+
+.khung-km header h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.dai-phu {
+    background-color: #FBE3E8;
+    color: #C8102E;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 7px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.than-2-cot {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 20px;
+    padding: 24px;
+}
+
+.vach-ngan {
+    background-color: #E0E0E0;
+}
+
+.cot-trai {
+    overflow: hidden;
+}
+
+.anh-sp {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 0 0 12px 14px;
+    display: block;
+}
+
+.nhom-muc {
+    margin-bottom: 18px;
+}
+
+.nhom-muc:last-child {
+    margin-bottom: 0;
+}
+
+.tieu-de-muc {
+    color: #C8102E;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.nhom-muc ul {
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.nhom-muc li {
+    margin-bottom: 6px;
+}
+
+.nhom-muc li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .than-2-cot {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 18px;
+    }
+
+    .vach-ngan {
+        height: 1px;
+        width: 100%;
+    }
+
+    .anh-sp {
+        float: none;
+        width: 180px;
+        margin: 0 auto 16px;
+    }
+}
